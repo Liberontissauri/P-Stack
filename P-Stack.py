@@ -26,7 +26,9 @@ class Stack():
     
     def pop(self):
         if self.isempty()==False:
+            popped = self.data[-1]
             self.data.pop(-1)
+            return popped
         else:
             raise Exception("Stack Underflow")
     
