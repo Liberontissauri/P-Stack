@@ -7,3 +7,4 @@ A stack data-structure implementation written in python.
     - peek() - get the element at the top of the stack
     - isfull() - Check if the stack is full
     - isempty() - Check if the stack is empty
+    - reverse() - reverses the stack elements's order
