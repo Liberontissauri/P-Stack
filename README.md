@@ -1,2 +1,2 @@
-# Stack-Implementation-Liberontissauri
+# P-Stack
 A stack data-structure implementation written in python.
