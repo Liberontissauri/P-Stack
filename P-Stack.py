@@ -48,3 +48,14 @@ class Stack():
 
     def sort(self):
         self.data.sort()
+
+    def top_to_bottom(self):
+        if len(self.stack_copy)!=0 and not self.isempty():
+            self.stack_copy.insert(1,self.pop())
+            self.top_to_bottom()
+        elif not self.isempty():
+            self.stack_copy.append(self.pop())
+            self.top_to_bottom()
+        
+        self.data = self.stack_copy
+        
