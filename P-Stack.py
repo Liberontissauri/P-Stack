@@ -44,3 +44,7 @@ class Stack():
             self.stack_copy.append(self.pop())
             self.reverse()
         self.data = self.stack_copy
+        self.stack_copy = []
+
+    def sort(self):
+        self.data.sort()
