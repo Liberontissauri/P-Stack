@@ -8,5 +8,5 @@ A stack data-structure implementation written in python.
     - isfull() - Check if the stack is full;
     - isempty() - Check if the stack is empty;
     - reverse() - reverses the stack elements's order;
-    - sort() - sorts the stack (greater elements at the top and lesser ones at the bottom);
+    - sort() - sorts the stack (lesser elements at the top and greater ones at the bottom);
     - top_to_bottom() - sends the top element of the stack to the bottom.
