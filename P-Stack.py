@@ -47,7 +47,20 @@ class Stack():
         self.stack_copy = []
 
     def sort(self):
-        self.data.sort()
+        temp = None
+        while not self.isempty():
+            if temp == None:
+                temp = self.pop()
+            if len(self.stack_copy)==0:
+                self.stack_copy.append(temp)
+                temp = None
+            elif self.stack_copy[-1] >= temp:
+                self.stack_copy.append(temp)
+                temp = None
+            else:
+                self.push(self.stack_copy[-1])
+                self.stack_copy.pop(-1)
+        self.data = self.stack_copy
 
     def top_to_bottom(self):
         if len(self.stack_copy)!=0 and not self.isempty():
